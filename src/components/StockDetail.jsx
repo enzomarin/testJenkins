@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { ButtonGroup } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import { Link, useHistory } from 'react-router-dom';
 
 //class StockDetail extends React.Component{
 
@@ -9,6 +10,7 @@ function StockDetail(props){
 
     const [show, setShow] = useState(false)
     const [value, setValue] = useState(1)
+    const history = useHistory();
 
     const setValid = (e) => {
         //console.log("comprobando")
@@ -20,10 +22,18 @@ function StockDetail(props){
         setValue(newVal)
     }
 
+    function handleClick(path) {
+        console.log(props)
+        //history.push(path,{ data: props });
+        history.push(path,{ state: {id:props.id}})
+        
+    }
+
     //render(){
         /*const {id, code, name, cat, fab, model, ver, year, price, total, ubicacion, origen, nota, stockEvents} = this.props*/
-        const {id, code, name, cat, fab, model, ver, year, price, stock, nota, ubicacion, origen, stockEvents} = props//his.props
+        const {id, code, name, cat, fab, model, ver, year, price, stock, nota, ubicacion, origen, critic, stockEvents} = props//his.props
         //const {show} = this.state
+        
         return(
             <>
             <tr className="StockDetail" onClick={() => setShow(!show)}> {/*<tr className="StockDetail" onClick={() => this.setState({show: !show})}>*/}
@@ -70,7 +80,7 @@ function StockDetail(props){
                                                     </div>
                                                 </Button>
                                                 <br />
-                                                <Button variant="secondary" size="md">
+                                                <Button onClick={() => handleClick("edit")} variant="secondary" size="md">
                                                     <div className = "btinfo">
                                                         <div className="btext"><b>Editar</b></div>
                                                         <div className="bti"><i class="fas fa-edit fa-2x"/></div>

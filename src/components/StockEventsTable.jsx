@@ -198,6 +198,7 @@ function StockEventsTable(props){
                                             price = {product.price}
                                             /*total  = {stockTotal}*/
                                             stock  = {product.stock}
+                                            critic = {product.critic}
                                             ubicacion = {product.ubicacion} 
                                             origen = {product.origen} 
                                             nota = {product.nota}
