@@ -1,0 +1,103 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.StockEventTable__Card{
+    /*margin: 5px 0px 5px 0px;*/
+    border: 2px solid rgb(228, 228, 228);
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+#my-input2[type="number"]{
+    -moz-appearance: textfield;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #202030;
+    width:45px;
+}
+
+.container_card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.e1{
+    flex: 1;
+    padding-top: 10px;
+}
+
+.e2{
+    flex: 1;
+    text-align: center;
+}
+
+.bt1{
+    padding:3%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.bt1c{
+    flex: 1;
+}
+.nCont{
+    margin-top:7%;
+    margin-left:50px;
+    margin-right: 10px;
+    padding:5px;
+}
+
+
+.btinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btext{
+    flex: 1;
+}
+
+.bti{
+    flex: 1;
+}
+
+.et{
+    flex: 1;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid rgb(146, 146, 146);
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.ei{
+    flex: 1;
+}
+
+.StockEventTable{
+    /*NO TOCAR POR FAVOR!!!!!*/
+    width:100%;
+    padding-left: 6%;
+    padding-right: 1%;
+}
+
+td{
+    width:10%;
+    text-align: center;
+}
+td:nth-child(1) {
+    width: 3%;
+}

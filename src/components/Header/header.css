@@ -1,0 +1,138 @@
+:root{
+    --colorHover: #ED6A5A;
+    --bacgroudColor : #242424;
+}
+
+.header-container{
+    
+    background: var(--bacgroudColor);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+   
+}
+.navbar-container{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+
+.nav-logo{
+    text-decoration: none;
+    color: #fff;
+    height: 80px;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.mensaje-bienvenido{
+    color: white;
+}
+.nav-logo:hover{
+    color:var(--colorHover) ;
+}
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu{
+    padding-top: 20px;
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    line-height: 80px;
+}
+.nav-menu-item{
+
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.nav-menu-icon{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+.nav-btn{
+    
+    color: var(--colorHover);
+    background: none;
+    border: none;
+    font-size: 18px;    
+    
+}
+
+@media (max-width: 960px){
+  
+    .header-container{
+        
+        height: 60px;
+    }
+  
+    .nav-logo{
+        font-size: 1.5rem;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .nav-menu{
+        
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% -60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        line-height: 70px;
+
+    }  
+    .nav-menu-item:hover{
+        color: #ED6A5A;
+    }
+    .nav-menu-icon{
+        display: block;
+    }
+
+    .nav-menu_active{
+        left: 0;
+    }
+}
