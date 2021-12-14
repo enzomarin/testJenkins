@@ -1,14 +1,15 @@
 # proyecto-software Frontend
 Proyecto para taller de Ingenieria de Software
 
-para correr este proyecto perimero se debe clonar este repositorio
-una vez clonado ingresar a la carpeta "proyecto-software-FRONTEND"
+para correr este proyecto perimero se debe clonar este repositorio.
 
-cd  proyecto-software-FRONTEND
+una vez clonado debe ingresar a la carpeta "proyecto-software-FRONTEND" :
 
-npm install # para instalar todas las dependencias
+- cd  proyecto-software-FRONTEND
 
-npm start # para iniciar el proyecto
+- npm install # para instalar todas las dependencias
+
+- npm start # para iniciar el proyecto
 
 automaticamente se abrira el navegador con el proyecto
 
